@@ -5,5 +5,6 @@ Grupo 7 - Unittest(Python)
 
 Integrantes:
 - Caio Lima - 72
+- Gabriel Teodoro -
 - Tiago Rodrigues - 1996
 - Vinicius Marques - 73
