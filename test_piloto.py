@@ -1,0 +1,22 @@
+import unittest
+from piloto import Piloto
+
+
+class TestPiloto(unittest.TestCase):
+
+    def setUp(self):
+        # Configuração inicial para os testes
+        self.piloto = Piloto("João", "Silva", 50000)
+
+    def test_email(self):
+        self.assertEqual(self.piloto.email, "João.Silva@email.com.br")
+
+    def test_nome_completo(self):
+        self.assertEqual(self.piloto.nome_completo, "João.Silva")
+
+    def test_aumentar_salario(self):
+        self.piloto.aumentar_salario()
+        self.assertEqual(self.piloto.salario, 50000 * 1.10)
+
+if __name__ == '__main__':
+    unittest.main()
