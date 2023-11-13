@@ -1,4 +1,4 @@
-class Piloto:
+class Piloto():
     aumento = 1.10
 
     def __init__(self, nome , sobrenome , salario):

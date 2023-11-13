@@ -1,10 +1,6 @@
 import unittest
 import xmlrunner
-import os
-import sys
 
-# Adiciona o diretório "src" ao caminho do Python
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.piloto import Piloto
 
