@@ -12,7 +12,7 @@ class Piloto:
 
     @property
     def nome_completo(self):
-    return '{}.{}'.format(self.nome, self.sobrenome)
+        return '{}.{}'.format(self.nome, self.sobrenome)
 
     def aumentar_salario(self):
         self.salario = float(self.salario * self.aumento)
