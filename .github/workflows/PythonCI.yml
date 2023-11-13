@@ -34,27 +34,14 @@ jobs:
     - name: Run Tests
       run: |
         cd test
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
         python -m unittest test_piloto.py -v
-        python -m xmlrunner test_piloto.py
 
     - name: Archive test artifacts
       uses: actions/upload-artifact@v3
-      with:
-        name: test
-        path: .\test.txt
+      run:
+        python -m xmlrunner test_piloto.py
     
-  notificacao:
 
-    runs-on: ubuntu-latest
-
-    env:
-      EMAIL_LIST: caio.lima@ges.inatel.br, vinicius.ximenis@ges.inatel.br
-
-    steps:
-    - name: Executa comandos
-      uses: actions/checkout@v3
-    - run: sh scripts/shell.sh
-
-  
-    
   
