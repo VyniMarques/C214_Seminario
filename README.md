@@ -1,3 +1,4 @@
+[![Python CI](https://github.com/VyniMarques/C214_Seminario/actions/workflows/PythonCI.yml/badge.svg)](https://github.com/VyniMarques/C214_Seminario/actions/workflows/PythonCI.yml)
 # C214 - Seminario
 Repositório para o Seminário de C214
 
