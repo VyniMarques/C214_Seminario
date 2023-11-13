@@ -38,4 +38,8 @@ jobs:
         cd test
         python -m unittest test_piloto.py -v
         python -m xmlrunner test_piloto
-      
+    - name: Archive test artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: test
+        path: .test\artefact
