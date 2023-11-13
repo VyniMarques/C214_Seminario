@@ -37,11 +37,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         python -m unittest test_piloto.py -v
-
-    - name: Archive test artifacts
-      uses: actions/upload-artifact@v3
-      run:
-        python -m xmlrunner test_piloto.py
-    
-
-  
+        python -m xmlrunner test_piloto
+      
