@@ -1,5 +1,12 @@
 import unittest
-from piloto import Piloto
+import xmlrunner
+import os
+import sys
+
+# Adiciona o diretório "src" ao caminho do Python
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.piloto import Piloto
 
 
 class TestPiloto(unittest.TestCase):
@@ -19,4 +26,4 @@ class TestPiloto(unittest.TestCase):
         self.assertEqual(self.piloto.salario, 50000 * 1.10)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='./artefact'))

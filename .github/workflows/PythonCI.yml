@@ -33,8 +33,27 @@ jobs:
         python-version: 3.9
     - name: Run Tests
       run: |
+        cd test
         python -m unittest test_piloto.py -v
-  
+        python -m xmlrunner test_piloto.py
+
+    - name: Archive test artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: test
+        path: .\test.txt
+    
+  notificacao:
+
+    runs-on: ubuntu-latest
+
+    env:
+      EMAIL_LIST: caio.lima@ges.inatel.br, vinicius.ximenis@ges.inatel.br
+
+    steps:
+    - name: Executa comandos
+      uses: actions/checkout@v3
+    - run: sh scripts/shell.sh
 
   
     
