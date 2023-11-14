@@ -44,7 +44,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: test
-        path: .\artefacr\test.xml
+        path: .\artefact\test.xml
 
     
   notificacao:
