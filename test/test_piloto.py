@@ -24,9 +24,12 @@ class TestPiloto(unittest.TestCase):
     def test_aumentar_salario(self):
         self.piloto.aumentar_salario()
         self.assertEqual(self.piloto.salario, 50000 * 1.10)
+    def test_email_valido(self):
+        self.assertIn('.com.br',self.piloto.email)
+    
 
-
-with open('.\\artefact\\tests.xml', 'wb') as output:
-    unittest.main(
-        testRunner=xmlrunner.XMLTestRunner(output=output),
-        failfast=False, buffer=False, catchbreak=False)
+if __name__ == 'main':
+    with open('.\\artefact\\results.xml', 'wb') as output:
+        unittest.main(
+            testRunner=output,
+            failfast=False, buffer=False, catchbreak=False)
