@@ -40,7 +40,6 @@ jobs:
 
     
   notificacao:
-
     runs-on: ubuntu-latest
 
     env:
@@ -49,4 +48,4 @@ jobs:
     steps:
     - name: Executa comandos
       uses: actions/checkout@v3
-     - run: sh ./scripts/shell.sh
+    - run: sh scripts/email.sh
