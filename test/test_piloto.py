@@ -29,7 +29,6 @@ class TestPiloto(unittest.TestCase):
     
 
 if __name__ == 'main':
-    with open('.\\artefact\\results.xml', 'wb') as output:
-        unittest.main(
-            testRunner=output,
-            failfast=False, buffer=False, catchbreak=False)
+
+    unittest.main(
+        failfast=False, buffer=False, catchbreak=False)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite name="test_piloto.TestPiloto-20231114122816" tests="4" file="test_piloto.py" time="0.010" timestamp="2023-11-14T12:28:16" failures="0" errors="0" skipped="0">
+		<testcase classname="test_piloto.TestPiloto" name="test_aumentar_salario" time="0.007" timestamp="2023-11-14T12:28:16" file="test_piloto.py" line="24"/>
+		<testcase classname="test_piloto.TestPiloto" name="test_email" time="0.001" timestamp="2023-11-14T12:28:16" file="test_piloto.py" line="18"/>
+		<testcase classname="test_piloto.TestPiloto" name="test_email_valido" time="0.001" timestamp="2023-11-14T12:28:16" file="test_piloto.py" line="27"/>
+		<testcase classname="test_piloto.TestPiloto" name="test_nome_completo" time="0.001" timestamp="2023-11-14T12:28:16" file="test_piloto.py" line="21"/>
+	</testsuite>
+</testsuites>
