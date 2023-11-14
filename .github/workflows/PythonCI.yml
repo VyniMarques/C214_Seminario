@@ -37,9 +37,16 @@ jobs:
         pip install -r requirements.txt
         cd test
         python -m unittest test_piloto.py -v
-        python -m xmlrunner test_piloto
-    - name: Archive test artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: test
-        path: .\TEST-test_piloto*.xml
+
+    
+  notificacao:
+
+    runs-on: ubuntu-latest
+
+    env:
+      EMAIL_LIST: caio.lima@ges.inatel.br, vinicius.ximenis@ges.inatel.br, gabriel.augusto@gec.inatel.br, tiago.rodrigues@gec.inatel.br 
+
+    steps:
+    - name: Executa comandos
+      uses: actions/checkout@v3
+    - run: sh scripts/shell.sh
