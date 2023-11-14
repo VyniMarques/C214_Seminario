@@ -17,6 +17,10 @@ class Piloto():
     def aumentar_salario(self):
         self.salario = float(self.salario * self.aumento)
 
+    def drift(self,carro):
+        return carro.drift()
+
+
 
 
 
