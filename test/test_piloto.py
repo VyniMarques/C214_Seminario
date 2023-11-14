@@ -25,8 +25,8 @@ class TestPiloto(unittest.TestCase):
         self.piloto.aumentar_salario()
         self.assertEqual(self.piloto.salario, 50000 * 1.10)
 
-if __name__ == '__main__':
-    with open('./test/artefact/results.xml', 'wb') as output:
-        unittest.main(
-            testRunner=xmlrunner.XMLTestRunner(output=output),
-            failfast=False, buffer=False, catchbreak=False)
+
+with open('.\\artefact\\tests.xml', 'wb') as output:
+    unittest.main(
+        testRunner=xmlrunner.XMLTestRunner(output=output),
+        failfast=False, buffer=False, catchbreak=False)
