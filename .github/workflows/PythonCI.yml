@@ -37,7 +37,8 @@ jobs:
         pip install -r requirements.txt
         cd test
         mkdir artefact
-        python -m xmlrunner .\test_piloto.py  -v  --output-file artefact\test.xml
+        python -m unittest .\test_piloto.py -v
+
         
     - name: Archive test artifacts
       uses: actions/upload-artifact@v3
